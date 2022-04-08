@@ -2,7 +2,7 @@
 /**
  * main - entry point
  *
- * Description: Print lower and upper alphabeton the same line
+ * Description: Print lower and upper alphabet on the same line
  * Return: 0
  */
 int main(void)
@@ -17,3 +17,4 @@ putchar('A' + c);
 putchar('\n');
 
 return (0);
+}
