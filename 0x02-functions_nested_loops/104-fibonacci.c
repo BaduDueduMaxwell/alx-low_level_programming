@@ -42,6 +42,7 @@ if (count != 98)
 printf(", ");
 fib2 = sum;
 }
+
 fib1_half1 = fib1 / 100000000000;
 fib2_half1 = fib2 / 100000000000;
 fib1_half2 = fib1 % 100000000000;   
@@ -66,5 +67,5 @@ fib1_half2 = fib2_half2;
 fib2_half1 = half1;
 fib2_half2 = half2;
 }
-printf("%n");
+printf("\n");
 return (0);
