@@ -1,1 +1,1 @@
-Introduction to StaticLibraries in C
+Introduction to Static Libraries in C
