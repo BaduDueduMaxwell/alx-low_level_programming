@@ -1,4 +1,9 @@
 #include <stdio.h>
+/**
+ * prints a string of char
+ *
+ * return 0, if successful
+ */
 
 int main(void)
 {
