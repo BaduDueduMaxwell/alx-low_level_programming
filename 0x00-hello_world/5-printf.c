@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 /**
- * main-prints a string of char
+ * main - Print string char
  *
  * return: 0 if successful
  */
-
 int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,");
