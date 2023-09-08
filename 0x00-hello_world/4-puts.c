@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main-prints a string of char
+ * main - Prints a string of char
  *
- * return 0: if successful
+ * Return 0: if successful
  */
 
 int main(void)
