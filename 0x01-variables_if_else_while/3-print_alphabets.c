@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - a-z, A-Z
+ * main - a-z A-Z letter
  *
  * Return: 0 if successful
  */
-
 int main(void)
 {
 	char letter;
@@ -14,8 +13,7 @@ int main(void)
 	{
 		putchar(letter);
 	}
-
-       	for (letter = 'A'; letter <= 'Z'; letter++)
+	for (letter = 'A'; letter <= 'Z'; letter++)
 	{
 		putchar(letter);
 	}
