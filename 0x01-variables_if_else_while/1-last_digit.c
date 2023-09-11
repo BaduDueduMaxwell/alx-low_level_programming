@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include <time.h>
 
+/**
+ * main - last digit
+ *
+ * Return: 0 if successful
+ */
 int main(void)
 {
     int n;
