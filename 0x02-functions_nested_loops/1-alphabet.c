@@ -3,7 +3,8 @@
 /**
 * main - prints alphabet
 *
-* Return: Always 0
+* This function prints the lowercase alphabet from 'a' to 'z' followed by a
+* newline character '\n'.
 */
 void print_alphabet(void)
 {
