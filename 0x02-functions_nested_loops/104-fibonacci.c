@@ -1,6 +1,11 @@
 #include <stdio.h>
 
-int main()
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
+int main(void)
 {
     unsigned int i;
     unsigned int a = 1;
@@ -9,7 +14,8 @@ int main()
 
     printf("%u, %u", a, b);
 
-    for (i = 3; i <= 98; i++) {
+    for (i = 3; i <= 98; i++)
+    {
         next = a + b;
         printf(", %u", next);
         a = b;
@@ -18,5 +24,5 @@ int main()
 
     printf("\n");
 
-    return 0;
+    return (0);
 }
