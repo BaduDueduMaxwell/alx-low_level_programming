@@ -3,4 +3,4 @@
 
 int _isupper(int c);
 
-#enduf
+#endif
