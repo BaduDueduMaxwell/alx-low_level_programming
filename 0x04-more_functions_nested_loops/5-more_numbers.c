@@ -1,9 +1,7 @@
 #include <stdio.h>
 
 /**
- * void_more_numbers(void) - prints 10 times the num, 0-14
- * @void - character
- * Return: 0-14 ten times
+ * more_numbers - prints 10 times the numbers 0-14 followed by a newline
  */
 void more_numbers(void)
 {
