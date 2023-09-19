@@ -2,9 +2,8 @@
 #include <stdio.h>
 
 /**
- * void print_line - draw straight line
- * @n: number of dashes to print
- * Return: straight line
+ * print_line - prints a line of underscores
+ * @n: number of times to print the underscore character
  */
 void print_line(int n)
 {
