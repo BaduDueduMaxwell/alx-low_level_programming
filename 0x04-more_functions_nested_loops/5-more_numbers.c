@@ -5,14 +5,13 @@
  * @void - character
  * Return: 0-14 ten times
  */
-
 void more_numbers(void)
 {
 	int count = 0;
 
 	while (count < 10)
 	{
-                int num;
+		int num;
 
 		for (num = 0; num <= 14; num++)
 		{
@@ -21,7 +20,7 @@ void more_numbers(void)
 				putchar('0' + num / 10);
 			}
 			putchar('0' + num % 10);
-                }
+		}
 		putchar('\n');
 		count++;
 	}
