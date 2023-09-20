@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
  * print_square - prints a square of '#' characters
  * @size: size of the square
@@ -12,13 +13,16 @@ void print_square(int size)
 	}
 	else
 	{
-		int count;
+		int row;
+		int column;
 
-		for (count = 0; count <= size; count++)
+		for (row = 1; row <= size; row++)
 		{
-			putchar('#');
-			count++;
+			for (column = 1; column <= size; column++)
+			{
+				putchar('#');
+			}
+			putchar('\n');
 		}
-		putchar('\n');
 	}
 }
