@@ -11,9 +11,9 @@ int main(void)
 
 	for (num = 1; num <= num2; num++)
 	{
-		if (num % num2 == 0)
+		if (num2 % num == 0 && num2 % 1 == num2)
 		{
-			printf("%ld", num);
+			printf("%ld", num2);
 		}
 	}
 	printf("/n");
