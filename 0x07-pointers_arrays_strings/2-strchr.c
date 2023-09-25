@@ -5,6 +5,7 @@
  * _strchr - function that locates a character in a string
  * @s: pointer
  * @c: character
+ * Return: character
  */
 char *_strchr(char *s, char c)
 {
@@ -16,5 +17,5 @@ char *_strchr(char *s, char c)
 		}
 		s++;
 	}
-	return NULL;
+	return (NULL);
 }
