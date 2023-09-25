@@ -1,19 +1,19 @@
 #include "main.h"
+#include <stdio.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <string.h>
+
 /**
- * _memset - function that fills the first n bytes of the memory area
- * pointed to by s with constant byte b
- * @s: pointer to char memory
- * @b: value to be filled
- * @n: number of bytes to be filled.
- * Return: Char s
+ * _memset - prints buffer in hexa
+ * @s: the memory area
+ * @b: the byte to fill
+ * @n: unsigned int
+ * Return: a pointer to the memory area.
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i;
+	int c = toascii(b);
 
-	for (i = 0; i <= n; i++)
-	{
-		s[i] = b;
-	}
-	return (s);
+	return (memset(s, c, n));
 }
