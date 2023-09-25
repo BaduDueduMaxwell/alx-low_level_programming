@@ -2,24 +2,33 @@
 #include <stdio.h>
 
 /**
- * print_diagsums - prints the sum of 2 diagonals of a square matrix
- * of integers.
- * @a: array
- * @size: size of array
+ * print_diagsums - prints sum of two diags
+ * @a: the memory area of diag
+ * @size: the size of the diag
  *
- * Return: void
  */
-
 void print_diagsums(int *a, int size)
 {
 	int i;
-	long int j = 0, k = 0;
+	int j;
+	int count = 0;
+	int forwarddiag = 0;
+	int otherdiag = 0;
 
 	for (i = 0; i < size; i++)
 	{
-		k = k + *(a + i * size + i);
-		j = j + *(a + i * size - i);
+		for (j = 0; j < size; j++)
+		{
+			if (i == j)
+			{
+				forwarddiag += *(a + count);
+			}
+			if ((i + j) == (size - 1))
+			{
+				otherdiag += *(a + count);
+			}
+			count++;
+		}
 	}
-
-	printf("%ld, %ld\n", k, j);
+	printf("%d, %d\n", forwarddiag, otherdiag);
 }
