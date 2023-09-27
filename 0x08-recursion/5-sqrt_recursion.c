@@ -2,9 +2,10 @@
 #include <math.h>
 
 /**
- * _sqrt_recursion - returns the natural square root of a number
+ * find_sqrt - check for roots
  * @n: number
  * Return: an integer
+ * @guess: an integer to check roots
  */
 int find_sqrt(int n, int guess)
 {
