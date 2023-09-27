@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * fatorial - returns the factorial of a given number
- * @n: number to be factored
- */
+ * factorial - returns the factorial of a given number
+ * @n: an integer param
+ * Return: an integer
+*/
 int factorial(int n)
 {
 	if (n < 0)
@@ -12,7 +13,7 @@ int factorial(int n)
 	}
 	else if (n > 0)
 	{
-		return (n * factorial(n -1));
+		return (n * factorial(n - 1));
 	}
 	else
 	{
