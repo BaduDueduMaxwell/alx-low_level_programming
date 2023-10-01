@@ -20,6 +20,9 @@ int main(int argc, char *argv[])
 		}
 		printf("%d\n", product);
 	}
-	printf("Error");
-	return (1);
+	else
+	{
+		printf("Error\n");
+		return (1);
+	}
 }
