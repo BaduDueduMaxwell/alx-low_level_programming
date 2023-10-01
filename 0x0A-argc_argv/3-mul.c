@@ -5,7 +5,7 @@
  * main - multiplies two numbers
  * @argc: argument count
  * @argv: argument vector
- * Return: Always (0)
+ * Return: Always (1)
  */
 int main(int argc, char *argv[])
 {
@@ -21,5 +21,5 @@ int main(int argc, char *argv[])
 		printf("%d\n", product);
 	}
 	printf("Error");
-	return (0);
+	return (1);
 }
