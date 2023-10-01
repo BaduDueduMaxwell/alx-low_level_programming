@@ -19,6 +19,7 @@ int main(int argc, char *argv[])
 			product *= atoi(argv[count]);
 		}
 		printf("%d\n", product);
+		return (0);
 	}
 	else
 	{
