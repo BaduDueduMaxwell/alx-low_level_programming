@@ -2,17 +2,15 @@
 
 /**
  * main - prints its name
+ * @argc: argument count
+ * @argv: argument vector
  * Return: Always 0
  */
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
-	int i;
+	(void)argc;
 
-	for (i = 0; i < argc; i++)
-	{
-		printf("%s ", argv[i]);
-	}
-	printf("\n");
+	printf("%s\n", argv[0]);
 
 	return (0);
 }
