@@ -9,21 +9,21 @@
  */
 int main(int argc, char *argv[])
 {
-	int count;
 	int product = 1;
 
-	if (argc > 1)
+	if (argc == 3)
 	{
-		for (count = 1; count < argc; count++)
-		{
-			product *= atoi(argv[count]);
-		}
+		int num1 = atoi(argv[1]);
+		int num2 = atoi(argv[2]);
+
+		product = num1 * num2;
+
 		printf("%d\n", product);
 		return (0);
 	}
-	else if ( argc != 3)
+	else
 	{
 		printf("Error\n");
+		return (1);
 	}
-	return (1);
 }
