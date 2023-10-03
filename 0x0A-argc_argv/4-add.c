@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-/**                                                                                                 
- * main - adds positive numbers                                                                     
- * @argc: argument count                                                                            
- * @argv: argument vector                                                                           
- * Return: 0 on success and 1 on error                                                              
+/**
+ * main - adds positive numbers
+ * @argc: argument count
+ * @argv: argument vector
+ * Return: 0 on success and 1 on error
  */
 int main(int argc, char *argv[])
 {
@@ -25,22 +25,7 @@ int main(int argc, char *argv[])
                 {
                         j = atoi(argv[i]);
 
-<<<<<<< HEAD
-			if (!isdigit(j) != '\0')
-			{
-				printf("Error\n");
-				return (1);
-			}
-			else
-			{
-				sum += j;
-			}
-		}
-		printf("%d\n", sum);
-	}
-	return (0);
-=======
-                        if (isdigit(j) != '\0')
+                        if (!isdigit(j) != '\0')
                         {
                                 printf("Error\n");
                                 return (1);
@@ -53,5 +38,4 @@ int main(int argc, char *argv[])
                 printf("%d\n", sum);
         }
         return (0);
->>>>>>> 2f627f940aa5fbd6a2b1982aea310685a3d581a8
 }
