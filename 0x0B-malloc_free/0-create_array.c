@@ -5,7 +5,7 @@
  * create_array - creates an array of char, and initializes it
  * @size: size of bytes
  * @c: character
- * Returns: a pointer on success, and NULL on fail
+ * Return: chars on success, and NULL on fail
  */
 char *create_array(unsigned int size, char c)
 {
@@ -30,7 +30,6 @@ char *create_array(unsigned int size, char c)
 		{
 			p[i] = c;
 		}
-		return p;
 	}
-	free(p);
+	return (p);
 }
