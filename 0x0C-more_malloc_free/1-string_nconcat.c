@@ -1,6 +1,5 @@
-#include <stdio.h>
-#include <string.h>
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * string_nconcat - function that concatenates two strings
@@ -8,57 +7,35 @@
  * @s2: second string
  * @n: number of bytes from second string
  *
- * Return: 0 on fail, pointer on success
+ * Return: 0 if failed, pointer otherwise
  */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *ptr;
-	unsigned int len1 = 0;
-	unsigned int len2 = 0;
-	unsigned int i, j;
+	char *p;
+	unsigned int j, i = 0;
 
 	if (s1 == NULL)
-	{
 		s1 = "";
-	}
 	if (s2 == NULL)
-	{
 		s2 = "";
-	}
-	while (s1[len1] != '\0')
+
+	while (s1[i] != '\0')
 	{
-		len1++;
+		i++;
 	}
-	while (s2[len2] != '\0')
+
+	p = malloc((i * sizeof(char)) + n + 1);
+	if (p == NULL)
+		return (0);
+
+	for (j = 0; j < i + n; j++)
 	{
-		len2++;
+		if (!(j >= i))
+			p[j] = s1[j];
+		else
+			p[j] = s2[j - i];
 	}
-
-	if (n >= len2)
-	{
-		n = len2;
-	}
-
-	unsigned int total_len = len1 + n;
-
-	ptr = (char *)malloc(total_len + 1);
-
-	if (ptr == NULL)
-	{
-		return (NULL);
-	}
-
-	for (i = 0; i < len1; i++)
-	{
-		ptr[i] = s1[i];
-	}
-
-	for (j = 0; j < len2; j++)
-	{
-		ptr[j] = s2[j];
-	}
-
-	ptr[i + j] = '\0';
-	return (ptr);
-	
+	p[j] = '\0';
+	return (p);
 }
