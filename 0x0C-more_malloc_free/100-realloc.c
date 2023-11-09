@@ -16,7 +16,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	unsigned int copied_size;
 	void *new_ptr;
 
-	ptr = malloc(sizeof(int) * old_size);
+	ptr = malloc(sizeof(char) * old_size);
 
 	if (ptr == NULL)
 	{
@@ -32,7 +32,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		return (ptr);
 	}
 
-	new_ptr = malloc(new_size);
+	new_ptr = malloc(sizeof(char) * new_size);
 
 	if (new_ptr == NULL)
 	{
